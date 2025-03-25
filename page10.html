@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            position: relative;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .card {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            margin-right: 50px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4a148c;
+            font-family: 'Dancing Script', cursive;
+            font-size: 36px;
+            font-weight: 600;
+        }
+        h2 {
+            color: #333;
+            font-weight: 500;
+        }
+        input {
+            padding: 12px;
+            border: 2px solid #a6c1ee;
+            border-radius: 6px;
+            width: 220px;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+        }
+        button {
+            padding: 12px 24px;
+            margin-top: 12px;
+            background: #a6c1ee;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(166, 193, 238, 0.5);
+        }
+        button:hover {
+            background: #8e9eab;
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(142, 158, 171, 0.6);
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px; /* Increased logo size */
+            height: auto;
+        }
+    </style>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password.toLowerCase() === "imagineering") {
+                window.location.href = "page11.html";
+            } else {
+                alert("Incorrect Password!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="club_logo.png" alt="Club Logo" class="logo"> <!-- Club Logo -->
+
+    <h1>The Innovative Tech Hunt</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Hint:</h2>
+            <p class="hint">
+                I mix science with fantasy to make dreams real, <br>
+                Creating Disney magic that you can feel. <br>
+                From talking robots to rides so fun, <br>
+                I make sure the magic is never done. <br>
+                <b>What am I?</b>
+            </p>
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+        <img src="10.jpg" alt="Hint Image" style="width: 300px; height: 300px; margin-left: 100px; border-radius: 10px;">
+    </div>
+</body>
+</html>

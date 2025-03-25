@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .start-btn {
+            padding: 12px 24px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .start-btn:hover {
+            background: #34495e;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(15px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Congratulation you completed the first level</h1>
+    <div class="container">
+        <p>
+            <center><b><h2>Level 2 (Decrypt the message)</h2></b></center>
+            <b><i>Solve this riddle and get your descryption key</i></b><br><br>
+            I hold the key, but not in plain sight,
+            Not in the video, yet still in the light.
+            To solve this puzzle, take my advice,
+            Check where creators leave words concise.
+
+            The visionary mind shares the clue,
+            In their latest work, fresh and new.
+            Not in the comments, nor in the frame,
+            But where details are written—find the name.
+            <br><br>
+            Decrypt the message to go to the next level. Good luck!<br>
+            <b>hggps?++@%#sgar&gighub&io+Level#3+</b>
+        </p>
+
+    </div>
+</body>
+</html>
